@@ -1,0 +1,49 @@
+
+<LinearLayout
+
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity = "center">
+
+
+
+    <Button
+            android:id="@+id/btn_map"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:onClick="onClick"
+            android:background="#FBE5D6"
+            android:textSize="25dp"
+            android:text="교내 지도"
+            />
+
+        <Button
+            android:id="@+id/btn_parking"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:onClick="onClick"
+            android:background="#FFF2CC"
+            android:textSize="25dp"
+            android:text="주차장 지도" />
+
+        <Button
+            android:id="@+id/btn_food"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:onClick="onClick"
+            android:background="#E2F0D9"
+            android:textSize="25dp"
+            android:text="음식점 리스트"/>
+
+        <Button
+            android:id="@+id/btn_pc"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:onClick="onClick"
+            android:background="#DEEBF7"
+            android:textSize="25dp"
+            android:text="PC방 리스트" />
+
+</LinearLayout>
