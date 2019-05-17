@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+ <!--눌려서 이벤트 발생시 표현해주고싶은 코드 -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <padding android:bottom="4dp" android:left="8dp" android:right="8dp" android:top="4dp" />
+            <gradient android:angle="270" android:endColor="#cdcdcd" android:startColor="#eeeeee" />
+            <!--
+            <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" android:topLeftRadius="2dp" android:topRightRadius="2dp" /> -->
+            <size
+                android:width="20dp"
+                android:height="20dp" />
+        </shape>
+    </item>
+
+    <!--평상시 버튼 코딩할때-->
+    <item android:state_pressed="false">
+        <shape android:shape="oval">
+            <padding
+                android:bottom="4dp"
+                android:left="8dp"
+                android:right="8dp"
+                android:top="4dp" />
+            <!-- 테두리와 색 지정하는 태그-->
+            <solid
+                android:color="#0099ff" />
+            <size
+                android:width="20dp"
+                android:height="20dp"/>
+            <!-- 둥근 정도-->
+            <!--
+            <corners
+                android:bottomLeftRadius="2000dp"
+                android:bottomRightRadius="2000dp"
+                android:topLeftRadius="2000dp"
+                android:topRightRadius="2000dp" /> -->
+        </shape>
+    </item>
+</selector>
