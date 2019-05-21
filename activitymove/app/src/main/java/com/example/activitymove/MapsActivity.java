@@ -1,4 +1,4 @@
-package com.example.maptest;
+package com.example.activitymove;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
