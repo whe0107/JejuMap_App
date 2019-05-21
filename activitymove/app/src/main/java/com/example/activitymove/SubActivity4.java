@@ -28,6 +28,8 @@ public class SubActivity4 extends  AppCompatActivity {
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "아이비스PC방");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "탑클래스PC방");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "W PC방");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "샹떼 PC방");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "아이센스PC방");
     }
     public void onClick(View view)
     {
