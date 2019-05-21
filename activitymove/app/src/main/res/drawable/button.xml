@@ -23,10 +23,12 @@
                 android:top="4dp" />
             <!-- 테두리와 색 지정하는 태그-->
             <solid
-                android:color="#0099ff" />
+                android:color="#0099ff"
+                />
             <size
                 android:width="20dp"
                 android:height="20dp"/>
+
             <!-- 둥근 정도-->
             <!--
             <corners

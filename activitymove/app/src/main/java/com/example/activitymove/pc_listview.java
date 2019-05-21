@@ -1,7 +1,7 @@
 package com.example.activitymove;
 import android.graphics.drawable.Drawable;
 
-public class MainListviewAct{
+public class pc_listview {
     private Drawable mIcon;
     private String mName;
 

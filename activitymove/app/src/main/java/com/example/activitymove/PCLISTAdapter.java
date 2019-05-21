@@ -10,31 +10,32 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.ArrayList;
 
-public class MainListAdapter extends BaseAdapter{
-    private ArrayList<MainListviewAct> listviewItem = new ArrayList<MainListviewAct>();
+public class PCLISTAdapter extends BaseAdapter {
+    private ArrayList<pc_listview> listviewItem = new ArrayList<pc_listview>();
 
-    public MainListAdapter(){
+    public PCLISTAdapter() {
 
     }
+
     @Override
-    public int getCount(){
+    public int getCount() {
         return listviewItem.size();
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent){
+    public View getView(int position, View convertView, ViewGroup parent) {
         final int pos = position;
         final Context context = parent.getContext();
 
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.mainlist_layout, parent, false);
+            convertView = inflater.inflate(R.layout.pclist_layout, parent, false);
         }
 
-        ImageView imgVeiw = (ImageView) convertView.findViewById(R.id.listImg);
-        TextView nVeiw = (TextView) convertView.findViewById(R.id.listText);
+        ImageView imgVeiw = (ImageView) convertView.findViewById(R.id.pc_imageview);
+        TextView nVeiw = (TextView) convertView.findViewById(R.id.pc_textview);
 
-        MainListviewAct itemlist = listviewItem.get(position);
+        pc_listview itemlist = listviewItem.get(position);
 
         imgVeiw.setImageDrawable(itemlist.getmIcon());
         nVeiw.setText(itemlist.getmName());
@@ -43,16 +44,17 @@ public class MainListAdapter extends BaseAdapter{
     }
 
     @Override
-    public Object getItem(int position){
+    public Object getItem(int position) {
         return listviewItem.get(position);
     }
+
     @Override
-    public long getItemId(int position){
+    public long getItemId(int position) {
         return position;
     }
 
-    public void addItem(Drawable img, String name){
-        MainListviewAct item = new MainListviewAct();
+    public void addItem(Drawable img, String name) {
+        pc_listview item = new pc_listview();
         item.setIcon(img);
         item.setName(name);
         listviewItem.add(item);

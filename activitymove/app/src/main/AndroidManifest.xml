@@ -27,7 +27,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyDqCdD1I-xNGQC_v111LMmovLCaY76eQco" />
 
         <activity
             android:name=".MapsActivity"
@@ -39,8 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SubActivity" />
-        <activity android:name=".SubActivity2" />
         <activity android:name=".SubActivity3" />
         <activity android:name=".SubActivity4" />
     </application>

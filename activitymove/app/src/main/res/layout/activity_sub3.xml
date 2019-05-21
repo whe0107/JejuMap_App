@@ -16,6 +16,7 @@
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:background="@drawable/button"
+            android:drawable="@drawable/food"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
