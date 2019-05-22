@@ -2,7 +2,7 @@ package com.example.activitymove;
 
 import android.graphics.drawable.Drawable;
 
-public class pc_listview {
+public class food_w_listview {
     private Drawable mIcon;
     private String mName;
 

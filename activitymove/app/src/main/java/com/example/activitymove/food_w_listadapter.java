@@ -10,15 +10,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.ArrayList;
 
-public class PCLISTAdapter extends BaseAdapter {
-    private ArrayList<pc_listview> listviewItem = new ArrayList<pc_listview>();
+public class food_w_listadapter extends BaseAdapter{
+    private ArrayList<food_w_listview> listviewItem = new ArrayList<food_w_listview>();
 
-    public PCLISTAdapter() {
+    public food_w_listadapter() {
 
     }
 
     @Override
-    public int getCount() { return listviewItem.size(); }
+    public int getCount() {
+        return listviewItem.size();
+    }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -27,13 +29,13 @@ public class PCLISTAdapter extends BaseAdapter {
 
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.pclist_layout, parent, false);
+            convertView = inflater.inflate(R.layout.food_w_layout, parent, false);
         }
 
-        ImageView imgVeiw = (ImageView) convertView.findViewById(R.id.pc_imageview);
-        TextView nVeiw = (TextView) convertView.findViewById(R.id.pc_textview);
+        ImageView imgVeiw = (ImageView) convertView.findViewById(R.id.food_w_imageview);
+        TextView nVeiw = (TextView) convertView.findViewById(R.id.food_w_textview);
 
-        pc_listview itemlist = listviewItem.get(position);
+        food_w_listview itemlist = listviewItem.get(position);
 
         imgVeiw.setImageDrawable(itemlist.getmIcon());
         nVeiw.setText(itemlist.getmName());
@@ -52,9 +54,10 @@ public class PCLISTAdapter extends BaseAdapter {
     }
 
     public void addItem(Drawable img, String name) {
-        pc_listview item = new pc_listview();
+        food_w_listview item = new food_w_listview();
         item.setIcon(img);
         item.setName(name);
         listviewItem.add(item);
     }
 }
+

@@ -41,6 +41,7 @@
         </activity>
         <activity android:name=".SubActivity3" />
         <activity android:name=".SubActivity4" />
+        <activity android:name=".food_western"/>
     </application>
 
 </manifest>

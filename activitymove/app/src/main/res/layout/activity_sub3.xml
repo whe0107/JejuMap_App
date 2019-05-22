@@ -13,6 +13,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/c"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:background="@drawable/button"
@@ -24,6 +25,7 @@
             android:textSize="30dp"/>
 
         <Button
+            android:id="@+id/j"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:background="@drawable/button"
@@ -43,6 +45,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/w"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:background="@drawable/button"
@@ -53,6 +56,7 @@
             android:textSize="30dp" />
 
         <Button
+            android:id="@+id/k"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:background="@drawable/button"
@@ -72,6 +76,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/f"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:background="@drawable/button"
@@ -82,6 +87,7 @@
             android:textSize="30dp"/>
 
         <Button
+            android:id="@+id/others"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:background="@drawable/button"
@@ -90,22 +96,8 @@
             android:layout_marginRight="20dp"
             android:text="기타"
             android:textSize="30dp"/>
-
-
     </LinearLayout>
 
-
-    <Button
-        android:id="@+id/btn_back"
-        android:onClick="onClick"
-        android:layout_weight="0.25"
-        android:layout_width="fill_parent"
-        android:layout_height="0px"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text = "뒤로가기"
-        android:textSize="30sp"
-        />
 
 
 </LinearLayout>
