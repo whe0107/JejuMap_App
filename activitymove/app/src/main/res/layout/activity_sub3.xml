@@ -16,13 +16,13 @@
             android:id="@+id/c"
             android:layout_width="125dp"
             android:layout_height="125dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/button"
             android:drawable="@drawable/food"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:text="중식"
-            android:textSize="30dp"/>
+            android:textSize="30dp" />
 
         <Button
             android:id="@+id/j"
@@ -48,10 +48,11 @@
             android:id="@+id/w"
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:background="@drawable/button"
-
             android:layout_marginLeft="20dp"
+
             android:layout_marginRight="20dp"
+            android:background="@drawable/button"
+            android:onClick="onClick"
             android:text="양식"
             android:textSize="30dp" />
 
