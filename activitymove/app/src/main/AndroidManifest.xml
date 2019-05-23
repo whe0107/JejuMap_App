@@ -41,6 +41,11 @@
         <activity android:name=".SubActivity3" />
         <activity android:name=".SubActivity4" />
         <activity android:name=".food_western" />
+        <activity android:name=".food_china" />
+        <activity android:name=".food_korea" />
+        <activity android:name=".food_japen" />
+        <activity android:name=".food_flour" />
+        <activity android:name=".food_others" />
     </application>
 
 </manifest>

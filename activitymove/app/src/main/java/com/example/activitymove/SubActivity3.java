@@ -18,6 +18,26 @@ public class SubActivity3 extends AppCompatActivity {
             Intent intent1 = new Intent(this,food_western.class);
             startActivity(intent1);
         }
+        else if (view.getId() == R.id.c){
+            Intent intent2 = new Intent(this,food_china.class);
+            startActivity(intent2);
+        }
+        else if (view.getId() == R.id.k){
+            Intent intent3 = new Intent(this,food_korea.class);
+            startActivity(intent3);
+        }
+        else if (view.getId() == R.id.j){
+            Intent intent4 = new Intent(this,food_japen.class);
+            startActivity(intent4);
+        }
+        else if (view.getId() == R.id.f){
+            Intent intent4 = new Intent(this,food_flour.class);
+            startActivity(intent4);
+        }
+        else if (view.getId() == R.id.others){
+            Intent intent4 = new Intent(this,food_others.class);
+            startActivity(intent4);
+        }
 
     }
 }

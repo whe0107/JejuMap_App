@@ -9,25 +9,24 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class food_western extends  AppCompatActivity {
+public class food_flour extends  AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.food_western);
+        setContentView(R.layout.food_flour);
 
         ListView listview;
-        food_w_listadapter adapter;
+        food_f_listadapter adapter;
 
-        adapter = new food_w_listadapter();
+        adapter = new food_f_listadapter();
 
-        listview = (ListView) findViewById(R.id.food_western);
+        listview = (ListView) findViewById(R.id.food_flour);
         listview.setAdapter(adapter);
 
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "nine");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "이왕돈까스");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "서브웨이");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "신전 떡볶이");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "김밥천국");
 
     }
     public void onClick(View view)
@@ -35,4 +34,3 @@ public class food_western extends  AppCompatActivity {
         finish();
     }
 }
-
