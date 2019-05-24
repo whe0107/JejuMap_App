@@ -25,7 +25,7 @@ public class food_china extends  AppCompatActivity {
         listview = (ListView) findViewById(R.id.food_china);
         listview.setAdapter(adapter);
 
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "진성반점");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.china), "진성반점");
 
     }
     public void onClick(View view)

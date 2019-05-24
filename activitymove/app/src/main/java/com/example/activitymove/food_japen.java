@@ -25,7 +25,8 @@ public class food_japen extends  AppCompatActivity {
         listview = (ListView) findViewById(R.id.food_japen);
         listview.setAdapter(adapter);
 
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "아우라 텐동");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.japen), "아우라 텐동");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.japen), "오니기리와 이규동");
 
     }
     public void onClick(View view)

@@ -25,14 +25,14 @@ public class food_korea extends  AppCompatActivity {
         listview = (ListView) findViewById(R.id.food_korea);
         listview.setAdapter(adapter);
 
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "위드미트");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "봉구스 밥버거");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "상아탑 식당");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "콘킹 부대찌개");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "삐삐네 정식");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "학교종이 땡땡땡");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "맵수다");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "밥먹젠");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "위드미트");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "봉구스 밥버거");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "상아탑 식당");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "콘킹 부대찌개");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "삐삐네 정식");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "학교종이 땡땡땡");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "맵수다");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "밥먹젠");
     }
     public void onClick(View view)
     {
