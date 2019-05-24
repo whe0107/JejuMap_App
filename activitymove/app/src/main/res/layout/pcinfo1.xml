@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".pcinfo">
+
+    <TextView
+        android:id="@+id/pcinfo1_textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="탑클래스pc방"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/pcinfo1_textView1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+
+    <TableLayout
+        android:id="@+id/pcinfotable1_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pcinfo1_textView1"
+        android:layout_margin="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_align="center">
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="가격"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="가격은 어찌될까"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:text="정액제" />
+
+            <TextView
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:text="정액제는 어찌될까" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/pcinfotable1_textView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+
+    <TextView
+        android:id="@+id/pcinfo1_textView2"
+        android:layout_below="@id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="MENU"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_below="@id/pcinfo1_textView2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <ImageView
+        android:id="@+id/pcmenu_image1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/line3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/korea" />
+    <ImageView
+        android:id="@+id/pcmenu_image2"
+        android:layout_below="@id/line3"
+        android:layout_toRightOf="@id/pcmenu_image1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/others"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <ImageView
+        android:id="@+id/pcmenu_image3"
+        android:layout_below="@id/line3"
+        android:layout_toRightOf="@id/pcmenu_image2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/western"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <ImageView
+        android:id="@+id/pcmenu_image4"
+        android:layout_below="@id/pcmenu_image1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/western"/>
+
+    <ImageView
+        android:id="@+id/pcmenu_image5"
+        android:layout_below="@id/pcmenu_image1"
+        android:layout_toRightOf="@id/pcmenu_image4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/food"/>
+
+    <ImageView
+        android:id="@+id/pcmenu_image6"
+        android:layout_below="@id/pcmenu_image1"
+        android:layout_toRightOf="@id/pcmenu_image5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/china"/>
+
+
+    <View
+        android:id="@+id/line4"
+        android:layout_below="@id/pcmenu_image4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/pcinfo1_textView3"
+        android:layout_below="@id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="사양"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <View
+        android:id="@+id/line5"
+        android:layout_below="@id/pcinfo1_textView3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <TableLayout
+        android:id="@+id/pcinfotable2_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line5"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#CCCCCC"
+        android:padding="2dp"
+        android:layout_align="center">
+
+        <TableRow>
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="CPU"
+                android:textSize="24sp" />
+
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="2.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="사양이 뭘까요"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="그래픽"
+                android:textSize="24sp" />
+
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="2.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="사양이 뭘까요"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="RAM"
+                android:textSize="24sp" />
+
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="2.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="사양이 뭘까요"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="모니터"
+                android:textSize="24sp" />
+
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="2.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="사양이 뭘까요"
+                android:textSize="24sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="마우스"
+                android:textSize="24sp" />
+
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="2.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="로지텍 G102, 로켓컨퓨어 오울아이"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="키보드"
+                android:textSize="24sp" />
+
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="2.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="사양이 뭘까요"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="헤드셋"
+                android:textSize="24sp" />
+
+            <TextView
+                android:background="#ffffff"
+                android:layout_weight="2.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="사양이 뭘까요"
+                android:textSize="24sp" />
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+
+
+
+</RelativeLayout>
