@@ -34,11 +34,14 @@ public class MainActivity extends  AppCompatActivity{
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
                 if(position == 0){
+
                     Intent intent1 = new Intent(MainActivity.this, MapsActivity.class);
+                    intent1.putExtra("v",1);
                     startActivity(intent1);
                 }
                 else if(position == 1) {
                     Intent intent2 = new Intent(MainActivity.this, MapsActivity.class);
+                    intent2.putExtra("v",2);
                     startActivity(intent2);
                 }
                 else if(position == 2) {
