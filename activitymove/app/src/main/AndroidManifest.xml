@@ -46,6 +46,7 @@
         <activity android:name=".food_japen" />
         <activity android:name=".food_flour" />
         <activity android:name=".food_others" />
+        <activity android:name=".buildinginfo" />
     </application>
 
 </manifest>
