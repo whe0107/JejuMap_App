@@ -21,11 +21,11 @@ public class buildinginfo extends AppCompatActivity {
         listview = (ListView) findViewById(R.id.building_listView);
         listview.setAdapter(adapter);
 
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "4층-컴퓨터공학");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "3층-에너지공학");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "2층-메카트로닉스공학");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "1층-기계공학");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "지하 1층-건축학");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.com), "4층-컴퓨터공학");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.energy), "3층-에너지공학");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.mechatronics), "2층-메카트로닉스공학");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.mechanical), "1층-기계공학");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.architecture), "지하 1층-건축학");
     }
     public void onClick(View view)
     {
