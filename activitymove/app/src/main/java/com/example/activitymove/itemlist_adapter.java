@@ -10,10 +10,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.ArrayList;
 
-public class food_f_listadapter extends BaseAdapter {
-    private ArrayList<food_f_listview> listviewItem = new ArrayList<food_f_listview>();
+public class itemlist_adapter extends BaseAdapter {
+    private ArrayList<item_listview> listviewItem = new ArrayList<item_listview>();
 
-    public food_f_listadapter() {
+    public itemlist_adapter() {
 
     }
 
@@ -29,13 +29,13 @@ public class food_f_listadapter extends BaseAdapter {
 
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.food_f_layout, parent, false);
+            convertView = inflater.inflate(R.layout.itemlist_layout, parent, false);
         }
 
-        ImageView imgVeiw = (ImageView) convertView.findViewById(R.id.food_f_imageview);
-        TextView nVeiw = (TextView) convertView.findViewById(R.id.food_f_textview);
+        ImageView imgVeiw = (ImageView) convertView.findViewById(R.id.item_imageview);
+        TextView nVeiw = (TextView) convertView.findViewById(R.id.item_textview);
 
-        food_f_listview itemlist = listviewItem.get(position);
+        item_listview itemlist = listviewItem.get(position);
 
         imgVeiw.setImageDrawable(itemlist.getmIcon());
         nVeiw.setText(itemlist.getmName());
@@ -54,7 +54,7 @@ public class food_f_listadapter extends BaseAdapter {
     }
 
     public void addItem(Drawable img, String name) {
-        food_f_listview item = new food_f_listview();
+        item_listview item = new item_listview();
         item.setIcon(img);
         item.setName(name);
         listviewItem.add(item);

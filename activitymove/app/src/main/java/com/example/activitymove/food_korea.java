@@ -18,9 +18,9 @@ public class food_korea extends  AppCompatActivity {
         setContentView(R.layout.food_korea);
 
         ListView listview;
-        food_k_listadapter adapter;
+        itemlist_adapter adapter;
 
-        adapter = new food_k_listadapter();
+        adapter = new itemlist_adapter();
 
         listview = (ListView) findViewById(R.id.food_korea);
         listview.setAdapter(adapter);

@@ -18,9 +18,9 @@ public class food_japen extends  AppCompatActivity {
         setContentView(R.layout.food_japen);
 
         ListView listview;
-        food_j_listadapter adapter;
+        itemlist_adapter adapter;
 
-        adapter = new food_j_listadapter();
+        adapter = new itemlist_adapter();
 
         listview = (ListView) findViewById(R.id.food_japen);
         listview.setAdapter(adapter);

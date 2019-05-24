@@ -19,9 +19,9 @@ public class food_others extends  AppCompatActivity {
         setContentView(R.layout.food_others);
 
         ListView listview;
-        food_o_listadapter adapter;
+        itemlist_adapter adapter;
 
-        adapter = new food_o_listadapter();
+        adapter = new itemlist_adapter();
 
         listview = (ListView) findViewById(R.id.food_others);
         listview.setAdapter(adapter);

@@ -17,9 +17,9 @@ public class SubActivity4 extends  AppCompatActivity {
         setContentView(R.layout.activity_pc);
 
         ListView listview;
-        PCLISTAdapter adapter;
+        itemlist_adapter adapter;
 
-        adapter = new PCLISTAdapter();
+        adapter = new itemlist_adapter();
 
         listview = (ListView) findViewById(R.id.PC_listView);
         listview.setAdapter(adapter);

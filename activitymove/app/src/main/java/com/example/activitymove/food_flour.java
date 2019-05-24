@@ -18,9 +18,9 @@ public class food_flour extends  AppCompatActivity {
         setContentView(R.layout.food_flour);
 
         ListView listview;
-        food_f_listadapter adapter;
+        itemlist_adapter adapter;
 
-        adapter = new food_f_listadapter();
+        adapter = new itemlist_adapter();
 
         listview = (ListView) findViewById(R.id.food_flour);
         listview.setAdapter(adapter);

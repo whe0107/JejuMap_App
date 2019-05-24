@@ -18,9 +18,9 @@ public class food_western extends  AppCompatActivity {
         setContentView(R.layout.food_western);
 
         ListView listview;
-        food_w_listadapter adapter;
+        itemlist_adapter adapter;
 
-        adapter = new food_w_listadapter();
+        adapter = new itemlist_adapter();
 
         listview = (ListView) findViewById(R.id.food_western);
         listview.setAdapter(adapter);
