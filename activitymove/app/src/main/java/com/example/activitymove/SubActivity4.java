@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 public class SubActivity4 extends  AppCompatActivity {
     @Override
@@ -30,9 +29,49 @@ public class SubActivity4 extends  AppCompatActivity {
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "W PC방");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "샹떼 PC방");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "아이센스PC방");
-    }
-    public void onClick(View view)
-    {
-        finish();
+
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View view, int position, long id) {
+                if(position == 0){
+
+                    Intent intent1 = new Intent(SubActivity4.this, MapsActivity.class);
+                    intent1.putExtra("info", 3);
+                    intent1.putExtra("info2", 1);
+                    startActivity(intent1);
+                }
+                else if(position == 1) {
+                    Intent intent2 = new Intent(SubActivity4.this, MapsActivity.class);
+                    intent2.putExtra("info", 3);
+                    intent2.putExtra("info2", 2);
+                    startActivity(intent2);
+                }
+                else if(position == 2) {
+                    Intent intent3 = new Intent(SubActivity4.this, SubActivity3.class);
+                    intent3.putExtra("info", 3);
+                    intent3.putExtra("info2", 3);
+                    startActivity(intent3);
+                }
+                else if(position == 3){
+                    Intent intent4 = new Intent(SubActivity4.this, SubActivity4.class);
+                    intent4.putExtra("info", 3);
+                    intent4.putExtra("info2", 4);
+                    startActivity(intent4);
+                }
+                else if(position == 4){
+                    Intent intent5 = new Intent(SubActivity4.this, SubActivity4.class);
+                    intent5.putExtra("info", 3);
+                    intent5.putExtra("info2", 5);
+                    startActivity(intent5);
+                }
+                else if(position == 5){
+                    Intent intent6 = new Intent(SubActivity4.this, SubActivity4.class);
+                    intent6.putExtra("info", 3);
+                    intent6.putExtra("info2", 6);
+                    startActivity(intent6);
+                }
+
+            }
+        });
     }
 }
