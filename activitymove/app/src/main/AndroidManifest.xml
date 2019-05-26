@@ -48,6 +48,13 @@
         <activity android:name=".food_flour" />
         <activity android:name=".food_others" />
         <activity android:name=".buildinginfo" />
+        <activity android:name=".pcinfo1" />
+        <activity android:name=".pcinfo2" />
+        <activity android:name=".pcinfo3" />
+        <activity android:name=".pcinfo4" />
+        <activity android:name=".pcinfo5" />
+        <activity android:name=".pcinfo6" />
+        <activity android:name=".parkinginfo1" />
     </application>
 
 </manifest>

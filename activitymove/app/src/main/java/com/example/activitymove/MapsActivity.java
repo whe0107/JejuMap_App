@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.google.android.gms.common.server.converter.StringToIntConverter;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -70,17 +71,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
     public boolean onMarkerClick(Marker marker) {
-        if (marker.getTitle() == "공과대학 4호관"){
-            Intent intent1 = new Intent(MapsActivity.this, buildinginfo.class);
+        String MapId = marker.getId();
+        String Id = MapId.substring(1);
+        int Mid = Integer.parseInt(Id);
+        if(Mid == 0){
+            Intent intent1 = new Intent(MapsActivity.this, pcinfo1.class);
             startActivity(intent1);
         }
-        else if (marker.getTitle() =="공4 주차장"){
-            Intent intent2 = new Intent(MapsActivity.this, parkinginfo1.class);
-            startActivity(intent2);
-        }
-        else if (marker.getTitle() =="제대PC방"){
-            Intent intent2 = new Intent(MapsActivity.this, pcinfo1.class);
-            startActivity(intent2);
+        else{
+            Intent intent2 = new Intent(MapsActivity.this, SubActivity3.class);
+            startActivity(intent2 );
         }
         return true;
     }
