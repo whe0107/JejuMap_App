@@ -105,19 +105,19 @@
     <ImageView
         android:id="@+id/pcmenu_image1"
         android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_height="50dp"
         android:layout_below="@id/line3"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:src="@drawable/korea" />
+        android:src="@drawable/coffee" />
     <ImageView
         android:id="@+id/pcmenu_image2"
         android:layout_below="@id/line3"
         android:layout_toRightOf="@id/pcmenu_image1"
         android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:src="@drawable/others"
+        android:layout_height="50dp"
+        android:src="@drawable/ramen"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"/>
@@ -127,8 +127,8 @@
         android:layout_below="@id/line3"
         android:layout_toRightOf="@id/pcmenu_image2"
         android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:src="@drawable/western"
+        android:layout_height="50dp"
+        android:src="@drawable/burger"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"/>
@@ -137,36 +137,36 @@
         android:id="@+id/pcmenu_image4"
         android:layout_below="@id/pcmenu_image1"
         android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_height="50dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:src="@drawable/western"/>
+        android:src="@drawable/dumpling"/>
 
     <ImageView
         android:id="@+id/pcmenu_image5"
         android:layout_below="@id/pcmenu_image1"
         android:layout_toRightOf="@id/pcmenu_image4"
         android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_height="50dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:src="@drawable/food"/>
+        android:src="@drawable/friedrice"/>
 
     <ImageView
         android:id="@+id/pcmenu_image6"
         android:layout_below="@id/pcmenu_image1"
         android:layout_toRightOf="@id/pcmenu_image5"
         android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_height="50dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:src="@drawable/china"/>
+        android:src="@drawable/hotdog"/>
 
 
     <View

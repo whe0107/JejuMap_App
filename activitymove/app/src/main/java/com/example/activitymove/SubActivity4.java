@@ -23,12 +23,12 @@ public class SubActivity4 extends  AppCompatActivity {
         listview = (ListView) findViewById(R.id.PC_listView);
         listview.setAdapter(adapter);
 
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "제대PC방");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "아이비스PC방");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "탑클래스PC방");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "제대 PC방");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "아이비스 PC방");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "탑클래스 PC방");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "W PC방");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "아이센스 PC방");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "샹떼 PC방");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "아이센스PC방");
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
