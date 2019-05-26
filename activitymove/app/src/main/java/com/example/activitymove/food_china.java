@@ -27,9 +27,17 @@ public class food_china extends  AppCompatActivity {
 
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.china), "진성반점");
 
-    }
-    public void onClick(View view)
-    {
-        finish();
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View view, int position, long id) {
+                if(position == 0){
+
+                    Intent intent1 = new Intent(food_china.this, MapsActivity.class);
+                    intent1.putExtra("info", 3);
+                    intent1.putExtra("info2", 0);
+                    startActivity(intent1);
+                }
+            }
+        });
     }
 }
