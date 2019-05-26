@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="제대pc방"
+        android:text="아이센스PC방"
         android:textSize="40dp"
         android:textColor="#000000"
         tools:ignore="MissingConstraints"
@@ -51,7 +51,7 @@
                 android:layout_weight="3"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="1시간 1500원/1200원"
+                android:text="1시간 1300원/1200원"
                 android:textSize="24sp" />
         </TableRow>
 
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textSize="24sp"
-                android:text="5시간 5000원/11시간 만원" />
+                android:text="6시간 5000원/13시간 만원" />
         </TableRow>
     </TableLayout>
 
@@ -246,7 +246,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:gravity="center"
-                android:text="GTX 1060"
+                android:text="GTX 1050"
                 android:textSize="24sp" />
         </TableRow>
 
@@ -286,7 +286,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:gravity="center"
-                android:text="사양이 뭘까요"
+                android:text="165HZ"
                 android:textSize="24sp" />
         </TableRow>
         <TableRow>
@@ -305,7 +305,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:gravity="center"
-                android:text="리줌 G-FACTOR 26"
+                android:text="로지텍 G102"
                 android:textSize="24sp" />
         </TableRow>
 
@@ -325,7 +325,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:gravity="center"
-                android:text="ABKO HACKER K661"
+                android:text="ABKO HACKER K660 스페셜"
                 android:textSize="24sp" />
         </TableRow>
 
@@ -345,7 +345,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:gravity="center"
-                android:text="LUTIS"
+                android:text="젬스트 G28 7.1 게이밍 헤드셋"
                 android:textSize="24sp" />
         </TableRow>
 
