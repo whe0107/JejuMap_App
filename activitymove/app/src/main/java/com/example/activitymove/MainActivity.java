@@ -37,11 +37,13 @@ public class MainActivity extends  AppCompatActivity{
 
                     Intent intent1 = new Intent(MainActivity.this, MapsActivity.class);
                     intent1.putExtra("info",1);
+                    intent1.putExtra("info2",0);
                     startActivity(intent1);
                 }
                 else if(position == 1) {
                     Intent intent2 = new Intent(MainActivity.this, MapsActivity.class);
                     intent2.putExtra("info",2);
+                    intent2.putExtra("info2",0);
                     startActivity(intent2);
                 }
                 else if(position == 2) {
