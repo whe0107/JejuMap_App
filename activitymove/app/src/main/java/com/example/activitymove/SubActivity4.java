@@ -65,7 +65,7 @@ public class SubActivity4 extends  AppCompatActivity {
                     startActivity(intent5);
                 }
                 else if(position == 5){
-                    Intent intent6 = new Intent(SubActivity4.this, SubActivity4.class);
+                    Intent intent6 = new Intent(SubActivity4.this, MapsActivity.class);
                     intent6.putExtra("info", 4);
                     intent6.putExtra("info2", 5);
                     startActivity(intent6);

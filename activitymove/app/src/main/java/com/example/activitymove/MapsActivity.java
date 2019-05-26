@@ -3,9 +3,7 @@ package com.example.activitymove;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.widget.Toast;
 
-import com.google.android.gms.common.server.converter.StringToIntConverter;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -30,18 +28,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Double PosMap[][] = {{33.454724, 126.565135}};
     Double PosPark[][] = {{33.454357, 126.565124}};
     Double PosFood[][] = {{33.459487, 126.561210},{33.454724, 126.565135}};
-    Double PosPC[][] = {{33.460257, 126.560999}};
-
+    Double PosPC[][] = {{33.460257, 126.560999},{33.449194, 126.559364},{33.470149, 126.546394},{33.472898, 126.545295},{33.473357, 126.545061},{33.473557, 126.544329}};
+    int Info = 0;
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
 
         mMap = googleMap;
 
         Intent intentmap = getIntent();
-        int Info = intentmap.getIntExtra("info", 0);
+        Info = intentmap.getIntExtra("info", 0);
         int Info2 = intentmap.getIntExtra("info2", 0);
-
         if (Info == 1){
             LatLng Engineering4  = new LatLng(PosMap[Info2][0], PosMap[Info2][1]);
             mMap.addMarker(new MarkerOptions().position(Engineering4 ).title("공과대학 4호관"));
@@ -64,28 +60,54 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setOnMarkerClickListener(this);
         }
         else if(Info == 4){
-            LatLng PC1  = new LatLng(PosPC[Info2][0], PosPC[Info2][1]);
-            mMap.addMarker(new MarkerOptions().position(PC1).title("제대PC방"));
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(PC1));
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(PC1,18));
-            mMap.setOnMarkerClickListener(this);
+            LatLng MainPC  = new LatLng(PosPC[Info2][0], PosPC[Info2][1]);
+            for(int a = 0; a < 6; a++){
+                AddnewMarker(a);
+            }
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(MainPC));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(MainPC,19));
         }
 
 
     }
 
-
+    public void AddnewMarker(int a){
+        LatLng PC = new LatLng(PosPC[a][0], PosPC[a][1]);
+        mMap.addMarker(new MarkerOptions().position(PC));
+        mMap.setOnMarkerClickListener(this);
+    }
+    public void PCmove(int a){
+        if(a == 0){
+            Intent intent = new Intent(MapsActivity.this, pcinfo1.class);
+            startActivity(intent);
+        }
+        else if(a == 1){
+            Intent intent = new Intent(MapsActivity.this, pcinfo2.class);
+            startActivity(intent);
+        }
+        else if(a == 2){
+            Intent intent = new Intent(MapsActivity.this, pcinfo3.class);
+            startActivity(intent);
+        }
+        else if(a == 3){
+            Intent intent = new Intent(MapsActivity.this, pcinfo4.class);
+            startActivity(intent);
+        }
+        else if(a == 4){
+            Intent intent = new Intent(MapsActivity.this, pcinfo5.class);
+            startActivity(intent);
+        }
+        else if(a == 5){
+            Intent intent = new Intent(MapsActivity.this, pcinfo6.class);
+            startActivity(intent);
+        }
+    }
     public boolean onMarkerClick(Marker marker) {
         String MapId = marker.getId();
         String Id = MapId.substring(1);
         int Mid = Integer.parseInt(Id);
-        if(Mid == 0){
-            Intent intent1 = new Intent(MapsActivity.this, pcinfo1.class);
-            startActivity(intent1);
-        }
-        else{
-            Intent intent2 = new Intent(MapsActivity.this, SubActivity3.class);
-            startActivity(intent2 );
+        if(Info == 4){
+            PCmove(Mid);
         }
         return true;
     }
