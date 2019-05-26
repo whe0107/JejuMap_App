@@ -54,7 +54,8 @@
         <activity android:name=".pcinfo4" />
         <activity android:name=".pcinfo5" />
         <activity android:name=".pcinfo6" />
-        <activity android:name=".parkinginfo1" />
+        <activity android:name=".parkinginfo1"/>
+        <activity android:name=".floor_b1_info"/>
     </application>
 
 </manifest>

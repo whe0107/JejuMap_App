@@ -68,8 +68,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textSize="24sp"
-                android:text="4시간반 5000원/10시간 만원
-55시간 5만원/100시간 9만원" />
+                android:text="4시간반 5000원/10시간 만원" />
         </TableRow>
     </TableLayout>
 
