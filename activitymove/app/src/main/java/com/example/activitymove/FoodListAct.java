@@ -3,15 +3,14 @@ package com.example.activitymove;
 import android.os.Bundle;
 import android.view.View;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Button;
 import android.content.Intent;
 
-public class SubActivity3 extends AppCompatActivity {
+public class FoodListAct extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub3);
+        setContentView(R.layout.activity_food);
     }
     public void onClick(View view) {
         if (view.getId() == R.id.w){

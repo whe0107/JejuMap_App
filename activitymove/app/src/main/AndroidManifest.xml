@@ -15,8 +15,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".foodinfo1"></activity>
-        <activity android:name=".buildinginfo" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -39,8 +37,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SubActivity3" />
-        <activity android:name=".SubActivity4" />
+        <activity android:name=".FoodListAct" />
+        <activity android:name=".PCListAct" />
         <activity android:name=".food_western" />
         <activity android:name=".food_china" />
         <activity android:name=".food_korea" />

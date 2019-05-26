@@ -47,11 +47,11 @@ public class MainActivity extends  AppCompatActivity{
                     startActivity(intent2);
                 }
                 else if(position == 2) {
-                    Intent intent3 = new Intent(MainActivity.this, SubActivity3.class);
+                    Intent intent3 = new Intent(MainActivity.this, FoodListAct.class);
                     startActivity(intent3);
                 }
                 else if(position == 3){
-                    Intent intent4 = new Intent(MainActivity.this, SubActivity4.class);
+                    Intent intent4 = new Intent(MainActivity.this, PCListAct.class);
                     startActivity(intent4);
                 }
 
