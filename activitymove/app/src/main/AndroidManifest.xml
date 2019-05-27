@@ -46,38 +46,10 @@
         <activity android:name=".food_flour" />
         <activity android:name=".food_others" />
         <activity android:name=".buildinginfo" />
-        <activity android:name=".pcinfo1" />
-        <activity android:name=".pcinfo2" />
-        <activity android:name=".pcinfo3" />
-        <activity android:name=".pcinfo4" />
-        <activity android:name=".pcinfo5" />
-        <activity android:name=".pcinfo6" />
+        <activity android:name=".pcinfo" />
         <activity android:name=".parkinginfo1"/>
         <activity android:name=".floor_b1_info"/>
-        <activity android:name=".foodinfo_china1"/>
-
-        <activity android:name=".foodinfo_flour1"/>
-        <activity android:name=".foodinfo_flour2"/>
-
-        <activity android:name=".foodinfo_korea1"/>
-        <activity android:name=".foodinfo_korea2"/>
-        <activity android:name=".foodinfo_korea3"/>
-        <activity android:name=".foodinfo_korea4"/>
-        <activity android:name=".foodinfo_korea5"/>
-        <activity android:name=".foodinfo_korea6"/>
-        <activity android:name=".foodinfo_korea7"/>
-        <activity android:name=".foodinfo_korea8"/>
-
-        <activity android:name=".foodinfo_japen1"/>
-        <activity android:name=".foodinfo_japen2"/>
-
-        <activity android:name=".foodinfo_others1"/>
-        <activity android:name=".foodinfo_others2"/>
-        <activity android:name=".foodinfo_others3"/>
-
-        <activity android:name=".foodinfo_western1"/>
-        <activity android:name=".foodinfo_western2"/>
-        <activity android:name=".foodinfo_western3"/>
+        <activity android:name=".foodinfo"/>
 
     </application>
 

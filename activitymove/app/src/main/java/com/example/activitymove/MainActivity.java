@@ -34,24 +34,24 @@ public class MainActivity extends  AppCompatActivity{
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
                 if(position == 0){
-                    Intent intent1 = new Intent(MainActivity.this, MapsActivity.class);
-                    intent1.putExtra("info",1);
-                    intent1.putExtra("info2",0);
-                    startActivity(intent1);
+                    Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                    intent.putExtra("info",1);
+                    intent.putExtra("info2",0);
+                    startActivity(intent);
                 }
                 else if(position == 1) {
-                    Intent intent2 = new Intent(MainActivity.this, MapsActivity.class);
-                    intent2.putExtra("info",2);
-                    intent2.putExtra("info2",0);
-                    startActivity(intent2);
+                    Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                    intent.putExtra("info",2);
+                    intent.putExtra("info2",0);
+                    startActivity(intent);
                 }
                 else if(position == 2) {
-                    Intent intent3 = new Intent(MainActivity.this, FoodListAct.class);
-                    startActivity(intent3);
+                    Intent intent = new Intent(MainActivity.this, FoodListAct.class);
+                    startActivity(intent);
                 }
                 else if(position == 3){
-                    Intent intent4 = new Intent(MainActivity.this, PCListAct.class);
-                    startActivity(intent4);
+                    Intent intent = new Intent(MainActivity.this, PCListAct.class);
+                    startActivity(intent);
                 }
             }
         });
