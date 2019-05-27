@@ -68,7 +68,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(MainPC,19));
         }
 
-
     }
 
     public void AddnewMarker(int a){
@@ -106,7 +105,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         String MapId = marker.getId();
         String Id = MapId.substring(1);
         int Mid = Integer.parseInt(Id);
-        if(Info == 4){
+        if(Info == 1){
+            Intent intent = new Intent(MapsActivity.this, buildinginfo.class);
+            startActivity(intent);
+        }
+        else if(Info == 2){
+            Intent intent = new Intent(MapsActivity.this, parkinginfo1.class);
+            startActivity(intent);
+        }
+        else if(Info == 3){
+        }
+        else if(Info == 4){
             PCmove(Mid);
         }
         return true;

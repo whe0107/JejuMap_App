@@ -34,7 +34,6 @@ public class MainActivity extends  AppCompatActivity{
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
                 if(position == 0){
-
                     Intent intent1 = new Intent(MainActivity.this, MapsActivity.class);
                     intent1.putExtra("info",1);
                     intent1.putExtra("info2",0);
@@ -54,7 +53,6 @@ public class MainActivity extends  AppCompatActivity{
                     Intent intent4 = new Intent(MainActivity.this, PCListAct.class);
                     startActivity(intent4);
                 }
-
             }
         });
     }
