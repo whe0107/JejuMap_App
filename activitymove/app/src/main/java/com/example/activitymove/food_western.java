@@ -25,7 +25,7 @@ public class food_western extends  AppCompatActivity {
         listview = (ListView) findViewById(R.id.food_western);
         listview.setAdapter(adapter);
 
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.western), "nine");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.western), "9nine");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.western), "이왕돈까스");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.western), "서브웨이");
 

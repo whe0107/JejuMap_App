@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".foodinfo_japen2">
+
+    <TextView
+        android:id="@+id/foodinfo5_textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="오니기리와 이규동"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/foodinfo5_textView1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+
+
+    <TextView
+        android:id="@+id/foodinfo5_textView2"
+        android:layout_below="@id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ONIGIRI"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/foodinfo5_textView2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/foodinfo5_textView3"
+        android:layout_below="@id/foodinfo5_textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="· 메뉴 - 가격"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+
+
+    <View
+        android:id="@+id/line3"
+        android:layout_below="@id/foodinfo5_textView3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/foodinfo5_textView4"
+        android:layout_below="@id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NOODLE"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_below="@id/foodinfo5_textView4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/foodinfo5_textView5"
+        android:layout_below="@id/foodinfo5_textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="· 메뉴 - 가격"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+
+
+
+
+
+    <View
+        android:id="@+id/line5"
+        android:layout_below="@id/foodinfo5_textView5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/foodinfo5_textView6"
+        android:layout_below="@id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="DONBURI"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <View
+        android:id="@+id/line6"
+        android:layout_below="@id/foodinfo5_textView6"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/foodinfo5_textView7"
+        android:layout_below="@id/foodinfo5_textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="· 메뉴 - 가격"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+
+</RelativeLayout>
