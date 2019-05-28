@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".foodinfo_western1">
+    tools:context=".foodinfo">
 
     <TextView
         android:id="@+id/foodinfo17_textView1"
@@ -18,7 +18,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line1"
         android:layout_below="@id/foodinfo17_textView1"
@@ -26,9 +25,6 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
-
     <TextView
         android:id="@+id/foodinfo17_textView2"
         android:layout_below="@id/line1"
@@ -41,7 +37,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line2"
         android:layout_below="@id/foodinfo17_textView2"
@@ -49,23 +44,115 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/foodinfo17_textView3"
         android:layout_below="@id/foodinfo17_textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="· 메뉴 - 가격"
-        android:textSize="25dp"
-        android:textColor="#000000"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="312dp" />
-
-
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 돈까스 - 5900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 치즈돈까스 - 6900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 생선까스 - 6900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 낙지볶음밥 - 6500"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 제육볶음밥 - 5500"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 뚝배기불고기 - 5900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 치즈스파게티 - 6900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 튀김우동 - 5900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 김치나베 - 5900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
     <View
         android:id="@+id/line3"
         android:layout_below="@id/foodinfo17_textView3"
@@ -73,9 +160,6 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
-
     <TextView
         android:id="@+id/foodinfo17_textView4"
         android:layout_below="@id/line3"
@@ -88,7 +172,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line4"
         android:layout_below="@id/foodinfo17_textView4"
@@ -96,24 +179,46 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-    <TextView
+    <LinearLayout
         android:id="@+id/foodinfo17_textView5"
-        android:layout_below="@id/line4"
+        android:layout_below="@id/foodinfo17_textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="· 메뉴 - 가격"
-        android:textSize="25dp"
-        android:textColor="#000000"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="312dp" />
-
-
-
-
-
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <TextView
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="· 우동류 - 3900~7500"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            />
+        <TextView
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="· 냉면(여름) - 5500"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            />
+        <TextView
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="· 소주 - 4000"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            />
+    </LinearLayout>
 </RelativeLayout>

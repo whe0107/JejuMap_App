@@ -26,13 +26,26 @@ public class food_western extends  AppCompatActivity {
         listview.setAdapter(adapter);
 
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.western), "9nine");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.western), "이왕돈까스");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.western), "서브웨이");
 
-    }
-    public void onClick(View view)
-    {
-        finish();
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View view, int position, long id) {
+                if(position == 0){
+                    Intent intent = new Intent(food_western.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 3);
+                    startActivity(intent);
+                }
+                else if(position == 1){
+                    Intent intent = new Intent(food_western.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 4);
+                    startActivity(intent);
+                }
+            }
+        });
+
     }
 }
 

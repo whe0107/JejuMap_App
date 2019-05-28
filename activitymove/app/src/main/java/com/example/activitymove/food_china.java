@@ -32,10 +32,10 @@ public class food_china extends  AppCompatActivity {
             public void onItemClick(AdapterView parent, View view, int position, long id) {
                 if(position == 0){
 
-                    Intent intent1 = new Intent(food_china.this, MapsActivity.class);
-                    intent1.putExtra("info", 3);
-                    intent1.putExtra("info2", 0);
-                    startActivity(intent1);
+                    Intent intent = new Intent(food_china.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 0);
+                    startActivity(intent);
                 }
             }
         });

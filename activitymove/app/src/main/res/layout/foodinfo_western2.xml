@@ -5,84 +5,252 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".foodinfo_western2">
+    tools:context=".foodinfo">
 
     <TextView
-        android:id="@+id/foodinfo18_textView1"
+        android:id="@+id/foodinfo19_textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="이왕 돈까스"
+        android:text="SUBWAY"
         android:textSize="40dp"
         android:textColor="#000000"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line1"
-        android:layout_below="@id/foodinfo18_textView1"
+        android:layout_below="@id/foodinfo19_textView1"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
-
     <TextView
-        android:id="@+id/foodinfo18_textView2"
+        android:id="@+id/foodinfo19_textView2"
         android:layout_below="@id/line1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="MENU"
+        android:text="CLASSIC"
         android:textSize="25dp"
         android:textColor="#000000"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line2"
-        android:layout_below="@id/foodinfo18_textView2"
+        android:layout_below="@id/foodinfo19_textView2"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
 
-    <TextView
-        android:id="@+id/foodinfo18_textView3"
-        android:layout_below="@id/foodinfo18_textView2"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/foodinfo19_textView3"
+        android:layout_below="@id/foodinfo19_textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="· 메뉴 - 가격"
-        android:textSize="25dp"
-        android:textColor="#000000"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="312dp" />
-
-
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 에그마요 - 4300"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 이탈리안BMT - 5100"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· BLT - 5300"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 미트볼 - 5100"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 햄 - 4700"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 참치 - 4800"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
     <View
         android:id="@+id/line3"
-        android:layout_below="@id/foodinfo18_textView3"
+        android:layout_below="@id/foodinfo19_textView3"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
-
     <TextView
-        android:id="@+id/foodinfo18_textView4"
+        android:id="@+id/foodinfo19_textView4"
         android:layout_below="@id/line3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="SIDE"
+        android:text="FERESH / LIGHT"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp" />
+    <View
+        android:id="@+id/line4"
+        android:layout_below="@id/foodinfo19_textView4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/foodinfo19_textView5"
+        android:layout_below="@id/foodinfo19_textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 서브웨이클럽 - 5600"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 로티세리치킨 - 5900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 로스트치킨 - 5900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 로스트비프 - 5900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+            />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 터키 - 5100"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 베지 - 3900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line5"
+        android:layout_below="@id/foodinfo19_textView5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+    <TextView
+        android:id="@+id/foodinfo19_textView6"
+        android:layout_below="@id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PREMIUM"
         android:textSize="25dp"
         android:textColor="#000000"
         tools:ignore="MissingConstraints"
@@ -90,30 +258,204 @@
         tools:layout_editor_absoluteY="312dp" />
 
     <View
-        android:id="@+id/line4"
-        android:layout_below="@id/foodinfo18_textView4"
+        android:id="@+id/line6"
+        android:layout_below="@id/foodinfo19_textView6"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/foodinfo19_textView7"
+        android:layout_below="@id/foodinfo19_textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 터키베이컨아보카도 - 6400"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 치킨베이컨랜치 - 5900"
+                android:textColor="#000000"
+                android:textSize="18dp"
+            />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 써브웨이멜트 - 5900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 스테이크치즈 - 6400"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 풀드포크 - 5900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 터키베이컨 - 5600"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/line7"
+        android:layout_below="@id/foodinfo19_textView7"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
 
     <TextView
-        android:id="@+id/foodinfo18_textView5"
-        android:layout_below="@id/line4"
+        android:id="@+id/foodinfo19_textView8"
+        android:layout_below="@id/line7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
         android:gravity="center"
-        android:text="· 메뉴 - 가격"
+        android:text="DRINKS / SIDES"
         android:textSize="25dp"
         android:textColor="#000000"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
+    <View
+        android:id="@+id/line8"
+        android:layout_below="@id/foodinfo19_textView8"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/foodinfo19_textView9"
+        android:layout_below="@id/foodinfo19_textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 쿠키류 - 1000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 웨지포테이토 - 1500"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 샐러드 - 샌드위치+1500"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
 
-
-
-
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 스프류 - 2900"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 탄산음료 - ????"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="1.5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· 커피 - ????"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

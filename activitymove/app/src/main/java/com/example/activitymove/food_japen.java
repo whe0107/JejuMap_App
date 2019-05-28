@@ -28,9 +28,22 @@ public class food_japen extends  AppCompatActivity {
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.japen), "아우라 텐동");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.japen), "오니기리와 이규동");
 
-    }
-    public void onClick(View view)
-    {
-        finish();
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View view, int position, long id) {
+                if(position == 0){
+                    Intent intent = new Intent(food_japen.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 1);
+                    startActivity(intent);
+                }
+                else if(position == 1){
+                    Intent intent = new Intent(food_japen.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 2);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }

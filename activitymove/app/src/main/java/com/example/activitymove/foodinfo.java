@@ -23,5 +23,11 @@ public class foodinfo extends AppCompatActivity {
         else if(FN == 3){
             setContentView(R.layout.foodinfo_japen2);
         }
+        else if(FN == 4){
+            setContentView(R.layout.foodinfo_western1);
+        }
+        else if(FN == 5){
+            setContentView(R.layout.foodinfo_western2);
+        }
     }
 }
