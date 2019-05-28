@@ -49,6 +49,10 @@
         <activity android:name=".pcinfo" />
         <activity android:name=".parkinginfo1"/>
         <activity android:name=".floor_b1_info"/>
+        <activity android:name=".floor_1_info"/>
+        <activity android:name=".floor_2_info"/>
+        <activity android:name=".floor_3_info"/>
+        <activity android:name=".floor_4_info"/>
         <activity android:name=".foodinfo"/>
 
     </application>
