@@ -50,20 +50,160 @@
         android:layout_centerInParent="true"
         android:background="#000000"/>
 
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/foodinfo12_textView3"
-        android:layout_below="@id/foodinfo12_textView2"
+        android:layout_below="@id/line2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="· 메뉴 - 가격"
-        android:textSize="25dp"
-        android:textColor="#000000"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="312dp" />
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·매운갈비찜 1인분 - 9000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·매운날개 한접시 - 14000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·매운닭발(무뼈) - 14000 / (통뼈) - 12000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·오돌뼈+셀프주먹밥 - 13000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·매운전골닭발 - 14000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·매운전골떡볶이 - 13000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·아강발 - 18000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·치즈에빠진닭 - 18000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·등갈비양념구이 - 17000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·고구마치즈구이 - 14000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·일본오뎅탕 - 18000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·철판김치볶음밥 - 7000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·철판똥집볶음 - 14000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·치킨 가라아게 - 15000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
 
 
 
@@ -98,21 +238,87 @@
         android:layout_centerInParent="true"
         android:background="#000000"/>
 
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/foodinfo12_textView5"
         android:layout_below="@id/line4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="· 메뉴 - 가격"
-        android:textSize="25dp"
-        android:textColor="#000000"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="312dp" />
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
 
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·누룽지탕 - 5000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+            <TextView
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="·매운라면 - 3500"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·고추만두 - 3500"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·셀프주먹밥 - 2000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·셀프볶음밥 - 2000"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
 
 
 

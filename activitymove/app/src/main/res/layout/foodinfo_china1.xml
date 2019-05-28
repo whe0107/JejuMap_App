@@ -125,6 +125,7 @@
                 android:textSize="20dp"
                 />
         </LinearLayout>
+
     <LinearLayout
         android:layout_weight="1"
         android:layout_width="match_parent"

@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="BURGER"
+        android:text="BURGER(SET는 2200원 추가)"
         android:textSize="25dp"
         android:textColor="#000000"
         tools:ignore="MissingConstraints"
@@ -50,21 +50,96 @@
         android:layout_centerInParent="true"
         android:background="#000000"/>
 
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/foodinfo14_textView3"
-        android:layout_below="@id/foodinfo14_textView2"
+        android:layout_below="@id/line2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="· 메뉴 - 가격"
-        android:textSize="25dp"
-        android:textColor="#000000"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="312dp" />
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
 
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·토니 불고기 - 3400"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·함박 스테이크 - 6000"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·새우마요 - 3400"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·불고기 해쉬 - 3900"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·순 통살 - 3500"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·더블 불고기 - 4800"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
 
 
     <View
@@ -81,7 +156,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="TOO BIG"
+        android:text="TOO BIG(SET는 2200원 추가)"
         android:textSize="25dp"
         android:textColor="#000000"
         tools:ignore="MissingConstraints"
@@ -96,20 +171,108 @@
         android:layout_centerInParent="true"
         android:background="#000000"/>
 
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/foodinfo14_textView5"
-        android:layout_below="@id/foodinfo14_textView4"
+        android:layout_below="@id/line4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="· 메뉴 - 가격"
-        android:textSize="25dp"
-        android:textColor="#000000"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="312dp" />
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·투빅허니갈릭 - 4200"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·투빅스노우어니언 - 4200"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·투빅모짜치즈 - 4800"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·투빅반반 - 4200"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·투빅양념 - 4200"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·투빅버거 - 4000"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·투빅스파이시 - 4200"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
 
 
 
@@ -143,20 +306,79 @@
         android:layout_centerInParent="true"
         android:background="#000000"/>
 
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/foodinfo14_textView7"
-        android:layout_below="@id/foodinfo14_textView6"
+        android:layout_below="@id/line6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="· 메뉴 - 가격"
-        android:textSize="25dp"
-        android:textColor="#000000"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="312dp" />
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·쓰리스타 - 7200"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·커플팩A - 11700"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·커플팩B - 12500"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·싱글팩 - 7400"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
 
 
 
@@ -191,20 +413,117 @@
         android:layout_centerInParent="true"
         android:background="#000000"/>
 
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/foodinfo14_textView9"
         android:layout_below="@id/line8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="· 메뉴 - 가격"
-        android:textSize="25dp"
-        android:textColor="#000000"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="312dp" />
+        tools:layout_editor_absoluteY="312dp"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·토니 순살 - 5300"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·후렌치후라이 - 1500/2000"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·캐아준 새우콜/치킨콜 - 2800"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·크런치 지파이 - 3500"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·어니언/양념 순살 - 6300"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·투치콜 - 3100"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·치즈감자볼 - 2200"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="·통 새우링 - 2800"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
 
 
 
