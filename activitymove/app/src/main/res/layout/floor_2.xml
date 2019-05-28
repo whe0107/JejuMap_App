@@ -2,15 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".floor_b1_info">
+    tools:context=".floor_2_info">
 
 
     <TextView
-        android:id="@+id/floorinfo5_textView1"
+        android:id="@+id/floorinfo2_textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="지하1층 - 건축학부"
+        android:text="2층 - 메카트로닉스공학"
         android:textSize="40dp"
         android:textColor="#000000"
         tools:ignore="MissingConstraints"
@@ -19,7 +19,7 @@
 
     <View
         android:id="@+id/line1"
-        android:layout_below="@id/floorinfo5_textView1"
+        android:layout_below="@id/floorinfo2_textView1"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_centerInParent="true"
@@ -30,6 +30,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/line1"
-        android:background="@drawable/공4_지하1층"
+        android:background="@drawable/공4_2층"
         />
 </RelativeLayout>
