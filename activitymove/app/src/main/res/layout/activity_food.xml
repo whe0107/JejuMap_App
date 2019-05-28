@@ -1,107 +1,142 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:layout_gravity="center"
+    tools:context=".FoodListAct">
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="fill_parent"
-        android:layout_height="0px"
-        android:gravity="center"
-        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/c"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="20dp"
-            android:drawable="@drawable/food"
+            android:layout_width="125sp"
+            android:layout_height="125sp"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="25sp"
+            android:background="@drawable/chinese"
             android:onClick="onClick"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_below="@+id/c"
+            android:layout_marginLeft="95sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="중식"
-            android:textSize="30dp" />
+            android:textColor="#000000"
+            android:textSize="30sp"/>
 
-        <Button
-            android:id="@+id/j"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:background="@drawable/button"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:onClick="onClick"
-            android:text="일식"
-            android:textSize="30dp"/>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="fill_parent"
-        android:layout_height="0px"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/w"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:layout_marginLeft="20dp"
-
-            android:layout_marginRight="20dp"
-            android:background="@drawable/button"
-            android:onClick="onClick"
-            android:text="양식"
-            android:textSize="30dp" />
-
-        <Button
+        <ImageView
             android:id="@+id/k"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:background="@drawable/button"
+            android:layout_width="125sp"
+            android:layout_height="125sp"
+            android:layout_marginLeft="225sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="60sp"
+            android:background="@drawable/rice"
             android:onClick="onClick"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_below="@+id/k"
+            android:layout_marginLeft="260sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="한식"
-            android:textSize="30dp" />
-    </LinearLayout>
+            android:textColor="#000000"
+            android:textSize="30sp"/>
 
-
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="fill_parent"
-        android:layout_height="0px"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
+        <ImageView
             android:id="@+id/f"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:background="@drawable/button"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_width="125sp"
+            android:layout_height="125sp"
+            android:layout_below="@+id/c"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="75sp"
+            android:background="@drawable/kimbap"
             android:onClick="onClick"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_below="@+id/f"
+            android:layout_marginLeft="95sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="분식"
-            android:textSize="30dp"/>
+            android:textColor="#000000"
+            android:textSize="30sp"/>
 
-        <Button
-            android:id="@+id/others"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:background="@drawable/button"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+
+        <ImageView
+            android:id="@+id/w"
+            android:layout_below="@+id/k"
+            android:layout_width="125sp"
+            android:layout_height="125sp"
+            android:layout_marginLeft="225sp"
+            android:layout_marginTop="75sp"
+            android:layout_marginRight="60sp"
+            android:background="@drawable/sandwich"
             android:onClick="onClick"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_below="@+id/w"
+            android:layout_marginLeft="260sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="양식"
+            android:textColor="#000000"
+            android:textSize="30sp"/>
+
+        <ImageView
+            android:id="@+id/j"
+            android:layout_width="125sp"
+            android:layout_height="125sp"
+            android:layout_below="@+id/f"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="75sp"
+            android:background="@drawable/jfood"
+            android:onClick="onClick"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_below="@+id/j"
+            android:layout_marginLeft="95sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일식"
+            android:textColor="#000000"
+            android:textSize="30sp"/>
+
+        <ImageView
+            android:id="@+id/others"
+            android:layout_below="@+id/w"
+            android:layout_width="125sp"
+            android:layout_height="125sp"
+            android:layout_marginLeft="225sp"
+            android:layout_marginTop="75sp"
+            android:layout_marginRight="60sp"
+            android:background="@drawable/fastfood"
+            android:onClick="onClick"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_below="@+id/others"
+            android:layout_marginLeft="260sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="기타"
-            android:textSize="30dp"/>
-    </LinearLayout>
+            android:textColor="#000000"
+            android:textSize="30sp"/>
 
 
 
-</LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
