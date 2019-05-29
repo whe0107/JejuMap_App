@@ -28,5 +28,4 @@
         android:layout_below="@id/line1"
         android:layout_margin="5dp"
         android:background="@drawable/binfo_1" />
-
 </RelativeLayout>
