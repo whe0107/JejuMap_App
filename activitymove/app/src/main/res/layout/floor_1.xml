@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     tools:context=".floor_info">
 
-
     <TextView
         android:id="@+id/floorinfo1_textView1"
         android:layout_width="match_parent"
@@ -16,7 +15,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line1"
         android:layout_below="@id/floorinfo1_textView1"
@@ -30,6 +28,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/line1"
-        android:background="@drawable/floor1"
+        android:background="@drawable/ramen"
         />
 </RelativeLayout>
