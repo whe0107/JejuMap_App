@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".foodinfo_korea1">
+    tools:context=".foodinfo">
 
     <TextView
         android:id="@+id/foodinfo6_textView1"
@@ -51,7 +51,7 @@
         android:background="#000000"/>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:id="@+id/foodinfo6_textView3"
         android:layout_below="@id/foodinfo6_textView2"
         android:layout_width="match_parent"
@@ -64,12 +64,6 @@
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp"
         >
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_vertical">
 
         <TextView
             android:layout_margin="2dp"
@@ -78,7 +72,7 @@
             android:layout_height="wrap_content"
             android:text="· 직화불고기 - 7500 / 특 - 9000"
             android:textColor="#000000"
-            android:textSize="20dp"
+            android:textSize="24dp"
             />
 
         <TextView
@@ -88,7 +82,7 @@
             android:layout_height="wrap_content"
             android:text="· 불고기 비빔밥 - 6000 / 특 - 7000"
             android:textColor="#000000"
-            android:textSize="20dp"
+            android:textSize="24dp"
             />
 
         <TextView
@@ -98,7 +92,7 @@
             android:layout_height="wrap_content"
             android:text="· 고기찌개 - 7000 / 특 - 8000"
             android:textColor="#000000"
-            android:textSize="20dp"
+            android:textSize="24dp"
             />
 
         <TextView
@@ -108,10 +102,9 @@
             android:layout_height="wrap_content"
             android:text="· 직불 마요덮밥 - 5000 / 특 - 7000"
             android:textColor="#000000"
-            android:textSize="20dp"
+            android:textSize="24dp"
             />
 
-    </LinearLayout>
     </LinearLayout>
 
     <View
@@ -146,7 +139,7 @@
 
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:id="@+id/foodinfo6_textView5"
         android:layout_below="@id/foodinfo6_textView4"
         android:layout_width="match_parent"
@@ -159,13 +152,6 @@
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp"
         >
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_vertical">
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -173,9 +159,8 @@
                 android:layout_height="wrap_content"
                 android:text="· 위드 세트 : 직화2 + 찌개 or 불고기 비빔밥 중 택2 - 25000"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 />
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -183,11 +168,7 @@
                 android:layout_height="wrap_content"
                 android:text="· 미트 세트 : 직화(특)2 + 찌개(특) or 불고기 비빔밥(특) 중 택2 - 29000"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 />
-
         </LinearLayout>
-    </LinearLayout>
-
-
 </RelativeLayout>

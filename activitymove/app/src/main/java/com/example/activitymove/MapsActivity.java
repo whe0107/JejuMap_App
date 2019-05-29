@@ -28,7 +28,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     Double PosMap[][] = {{33.454724, 126.565135}};
     Double PosPark[][] = {{33.454357, 126.565124}};
-    Double PosFood[][] = {{33.460361, 126.561738},{33.460745, 126.560997},{33.460324, 126.561921},{33.460305, 126.561227},{33.460307, 126.562043}};
+    Double PosFood[][] = {{33.460361, 126.561738},{33.460745, 126.560997},{33.460324, 126.561921},{33.460305, 126.561227},{33.460307, 126.562043},
+            {33.460362, 126.561954},{33.460717, 126.561472}, {33.460651, 126.561863}, {33.460620, 126.561093}, {33.460604, 126.561395}, {33.460373, 126.562133}, {33.460623, 126.561112}, {33.460331, 126.561550},
+            {33.460639, 126.561719}, {33.460222, 126.560971}, {33.460294, 126.561489}, {33.460388, 126.562383}, {33.460386, 126.562300}};
     Double PosPC[][] = {{33.460257, 126.560999},{33.449194, 126.559364},{33.470149, 126.546394},{33.472898, 126.545295},{33.473357, 126.545061},{33.473557, 126.544329}};
     int Info = 0;
     @Override
@@ -55,7 +57,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         else if(Info == 3){
             LatLng MainFood  = new LatLng(PosFood[Info2][0], PosFood[Info2][1]);
-            for(int a = 0; a < 5; a++){
+            for(int a = 0; a < 18; a++){
                 AddnewMarker(Info, a);
             }
             mMap.moveCamera(CameraUpdateFactory.newLatLng(MainFood));

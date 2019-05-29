@@ -30,9 +30,28 @@ public class food_others extends  AppCompatActivity {
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.others), "맘스터치");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.others), "도스마스");
 
-    }
-    public void onClick(View view)
-    {
-        finish();
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View view, int position, long id) {
+                if(position == 0){
+                    Intent intent = new Intent(food_others.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 15);
+                    startActivity(intent);
+                }
+                else if(position == 1){
+                    Intent intent = new Intent(food_others.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 16);
+                    startActivity(intent);
+                }
+                else if(position == 2){
+                    Intent intent = new Intent(food_others.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 17);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }

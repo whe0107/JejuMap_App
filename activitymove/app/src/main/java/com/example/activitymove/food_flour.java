@@ -28,9 +28,22 @@ public class food_flour extends  AppCompatActivity {
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.flour), "신전 떡볶이");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.flour), "김밥천국");
 
-    }
-    public void onClick(View view)
-    {
-        finish();
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View view, int position, long id) {
+                if(position == 0){
+                    Intent intent = new Intent(food_flour.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 13);
+                    startActivity(intent);
+                }
+                else if(position == 1){
+                    Intent intent = new Intent(food_flour.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 14);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }

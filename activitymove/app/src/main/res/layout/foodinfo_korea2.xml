@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".foodinfo_korea2">
-
+    tools:context=".foodinfo">
     <TextView
         android:id="@+id/foodinfo7_textView1"
         android:layout_width="match_parent"
@@ -18,7 +17,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line1"
         android:layout_below="@id/foodinfo7_textView1"
@@ -26,9 +24,6 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
-
     <TextView
         android:id="@+id/foodinfo7_textView2"
         android:layout_below="@id/line1"
@@ -41,7 +36,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line2"
         android:layout_below="@id/foodinfo7_textView2"
@@ -49,15 +43,13 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
     <LinearLayout
         android:orientation="horizontal"
         android:id="@+id/foodinfo7_textView3"
         android:layout_below="@id/line2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -71,7 +63,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_vertical">
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -81,7 +72,6 @@
                 android:textColor="#000000"
                 android:textSize="18dp"
                 />
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -91,7 +81,6 @@
                 android:textColor="#000000"
                 android:textSize="18dp"
                 />
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -121,7 +110,6 @@
                 android:textSize="18dp"
                 />
         </LinearLayout>
-
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -175,8 +163,6 @@
                 />
         </LinearLayout>
     </LinearLayout>
-
-
     <View
         android:id="@+id/line3"
         android:layout_below="@id/foodinfo7_textView3"
@@ -184,7 +170,6 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
     <TextView
         android:id="@+id/foodinfo7_textView4"
         android:layout_below="@id/line3"
@@ -197,7 +182,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line4"
         android:layout_below="@id/foodinfo7_textView4"
@@ -206,14 +190,13 @@
         android:layout_centerInParent="true"
         android:background="#000000"/>
 
-
     <LinearLayout
         android:orientation="horizontal"
         android:id="@+id/foodinfo7_textView5"
         android:layout_below="@id/line4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -227,7 +210,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_vertical">
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -237,7 +219,6 @@
                 android:textColor="#000000"
                 android:textSize="18dp"
                 />
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -247,9 +228,7 @@
                 android:textColor="#000000"
                 android:textSize="18dp"
                 />
-
     </LinearLayout>
-
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -277,9 +256,6 @@
                 />
         </LinearLayout>
     </LinearLayout>
-
-
-
     <View
         android:id="@+id/line5"
         android:layout_below="@id/foodinfo7_textView5"
@@ -287,7 +263,6 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
     <TextView
         android:id="@+id/foodinfo7_textView6"
         android:layout_below="@id/line5"
@@ -300,7 +275,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line6"
         android:layout_below="@id/foodinfo7_textView6"
@@ -308,17 +282,13 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
-
-
     <LinearLayout
         android:orientation="horizontal"
         android:id="@+id/foodinfo7_textView7"
         android:layout_below="@id/line6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -364,7 +334,6 @@
                 />
 
         </LinearLayout>
-
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -380,7 +349,6 @@
                 android:textColor="#000000"
                 android:textSize="18dp"
                 />
-
             <TextView
             android:layout_margin="2dp"
             android:gravity="center"
@@ -401,10 +369,6 @@
                 />
         </LinearLayout>
     </LinearLayout>
-
-
-
-
     <View
         android:id="@+id/line7"
         android:layout_below="@id/foodinfo7_textView7"
@@ -412,7 +376,6 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
     <TextView
         android:id="@+id/foodinfo7_textView8"
         android:layout_below="@id/line7"
@@ -425,7 +388,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line8"
         android:layout_below="@id/foodinfo7_textView8"
@@ -440,7 +402,7 @@
         android:layout_below="@id/line8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -523,6 +485,4 @@
                 />
         </LinearLayout>
     </LinearLayout>
-
-
 </RelativeLayout>

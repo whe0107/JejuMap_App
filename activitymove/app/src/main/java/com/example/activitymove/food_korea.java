@@ -33,9 +33,59 @@ public class food_korea extends  AppCompatActivity {
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "학교종이 땡땡땡");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "맵수다");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.korea), "밥먹젠");
-    }
-    public void onClick(View view)
-    {
-        finish();
+
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View view, int position, long id) {
+                if(position == 0){
+                    Intent intent = new Intent(food_korea.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 5);
+                    startActivity(intent);
+                }
+                else if(position == 1){
+                    Intent intent = new Intent(food_korea.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 6);
+                    startActivity(intent);
+                }
+                else if(position == 2){
+                    Intent intent = new Intent(food_korea.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 7);
+                    startActivity(intent);
+                }
+                else if(position == 3){
+                    Intent intent = new Intent(food_korea.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 8);
+                    startActivity(intent);
+                }
+                else if(position == 4){
+                    Intent intent = new Intent(food_korea.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 9);
+                    startActivity(intent);
+                }
+                else if(position == 5){
+                    Intent intent = new Intent(food_korea.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 10);
+                    startActivity(intent);
+                }
+                else if(position == 6){
+                    Intent intent = new Intent(food_korea.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 11);
+                    startActivity(intent);
+                }
+                else if(position == 7){
+                    Intent intent = new Intent(food_korea.this, MapsActivity.class);
+                    intent.putExtra("info", 3);
+                    intent.putExtra("info2", 12);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }

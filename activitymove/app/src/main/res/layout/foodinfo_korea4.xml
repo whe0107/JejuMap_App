@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".foodinfo_korea4">
+    tools:context=".foodinfo">
 
     <TextView
         android:id="@+id/foodinfo9_textView1"
@@ -18,7 +18,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line1"
         android:layout_below="@id/foodinfo9_textView1"
@@ -26,9 +25,6 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
-
     <TextView
         android:id="@+id/foodinfo9_textView2"
         android:layout_below="@id/line1"
@@ -41,7 +37,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line2"
         android:layout_below="@id/foodinfo9_textView2"
@@ -49,9 +44,8 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:id="@+id/foodinfo9_textView3"
         android:layout_below="@id/line2"
         android:layout_width="match_parent"
@@ -64,13 +58,6 @@
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp"
         >
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_vertical">
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -78,9 +65,8 @@
                 android:layout_height="wrap_content"
                 android:text="·부대찌개 1인분 8000원"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 />
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -88,9 +74,8 @@
                 android:layout_height="wrap_content"
                 android:text="·통김치부대전골 1인분 8000원"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 />
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -98,9 +83,8 @@
                 android:layout_height="wrap_content"
                 android:text="·모듬사리 - 5000"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 />
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -108,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:text="·모듬햄 - 3000"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 />
             <TextView
                 android:layout_margin="2dp"
@@ -117,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:text="·모듬떡 - 2000"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 />
             <TextView
                 android:layout_margin="2dp"
@@ -126,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:text="·라면사리 - 1000"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 />
             <TextView
                 android:layout_margin="2dp"
@@ -135,7 +119,7 @@
                 android:layout_height="wrap_content"
                 android:text="·당면사리 - 1000"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 />
             <TextView
                 android:layout_margin="2dp"
@@ -144,14 +128,9 @@
                 android:layout_height="wrap_content"
                 android:text="·공기밥 - 1000"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 />
-        </LinearLayout>
     </LinearLayout>
-
-
-
-
     <View
         android:id="@+id/line3"
         android:layout_below="@id/foodinfo9_textView3"
@@ -159,10 +138,7 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
-
-    <TextView
+<TextView
         android:id="@+id/foodinfo9_textView4"
         android:layout_below="@id/line3"
         android:layout_width="match_parent"
@@ -174,7 +150,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line4"
         android:layout_below="@id/foodinfo9_textView4"
@@ -184,7 +159,7 @@
         android:background="#000000"/>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:id="@+id/foodinfo9_textView5"
         android:layout_below="@id/line4"
         android:layout_width="match_parent"
@@ -197,13 +172,6 @@
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp"
         >
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_vertical">
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -213,7 +181,6 @@
                 android:textColor="#000000"
                 android:textSize="20dp"
                 />
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -223,7 +190,6 @@
                 android:textColor="#000000"
                 android:textSize="20dp"
                 />
-
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -233,13 +199,5 @@
                 android:textColor="#000000"
                 android:textSize="20dp"
                 />
-
-        </LinearLayout>
     </LinearLayout>
-
-
-
-
-
-
 </RelativeLayout>

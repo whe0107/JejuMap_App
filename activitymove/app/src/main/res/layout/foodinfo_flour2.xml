@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".foodinfo_flour2">
-
+    tools:context=".foodinfo">
     <TextView
         android:id="@+id/foodinfo3_textView1"
         android:layout_width="match_parent"
@@ -18,7 +17,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line1"
         android:layout_below="@id/foodinfo3_textView1"
@@ -26,9 +24,6 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
-
     <TextView
         android:id="@+id/foodinfo3_textView2"
         android:layout_below="@id/line1"
@@ -41,7 +36,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line2"
         android:layout_below="@id/foodinfo3_textView2"
@@ -49,9 +43,8 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:id="@+id/foodinfo3_textView3"
         android:layout_below="@id/line2"
         android:layout_width="match_parent"
@@ -64,12 +57,6 @@
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp"
         >
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_vertical">
             <TextView
                 android:layout_margin="2dp"
                 android:gravity="center"
@@ -214,9 +201,5 @@
                 android:textColor="#000000"
                 android:textSize="20dp"
                 />
-        </LinearLayout>
     </LinearLayout>
-
-
-
 </RelativeLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".foodinfo_others2">
+    tools:context=".foodinfo">
 
     <TextView
         android:id="@+id/foodinfo15_textView1"
