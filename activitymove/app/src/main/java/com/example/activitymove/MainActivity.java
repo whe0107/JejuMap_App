@@ -26,9 +26,9 @@ public class MainActivity extends  AppCompatActivity{
         listview.setAdapter(adapter);
 
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.map_location), "교내 지도");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.parking_location), "주차장 지도");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.food), "음식점 리스트");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.computer), "PC방 리스트");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.parking), "주차장 지도");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.foodlst), "음식점 리스트");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.pc), "PC방 리스트");
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
