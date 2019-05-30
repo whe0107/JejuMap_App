@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     tools:context=".floor_info">
 
-
     <TextView
         android:id="@+id/floorinfo4_textView1"
         android:layout_width="match_parent"
@@ -16,7 +15,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="312dp" />
-
     <View
         android:id="@+id/line1"
         android:layout_below="@id/floorinfo4_textView1"
@@ -24,12 +22,17 @@
         android:layout_height="2dp"
         android:layout_centerInParent="true"
         android:background="#000000"/>
-
-
-    <ImageView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/line1"
-        android:background="@drawable/ramen"
-        />
+        >
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/binfo_b1"
+            />
+    </ScrollView>
 </RelativeLayout>
