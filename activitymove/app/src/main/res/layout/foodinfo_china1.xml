@@ -24,9 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_centerInParent="true"
-        android:background="#000000"/>    <ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        android:background="#000000"/>
     <TextView
         android:id="@+id/foodinfo1_textView2"
         android:layout_below="@id/line1"
@@ -408,5 +406,4 @@
                 />
         </LinearLayout>
     </LinearLayout>
-    </ScrollView>
 </RelativeLayout>
